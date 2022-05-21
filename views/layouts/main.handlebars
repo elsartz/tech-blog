@@ -4,30 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just Tech News</title>
+  <title>The Tech Blog</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">Just Tech News</a>
-      </h1>
-      <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+    <header class="hero">
+      
+      <nav >
+        <button class="btn-back" href="/">Home</button>
+        <button class="btn-back" href="/dashboard">dashboard</button>
+        {{#if loggedIn}}        
+        <button id="logout" class="btn-back">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a class="btn-back" href="/login">login</a>
         {{/if}}
       </nav>
+      </br>
+      <h1 class="app-title">
+        <a href="/">The Tech Blog</a>
+      </h1>
     </header>
     <main>
       {{{ body }}}
     </main>
-    <footer>
-      Thanks for visiting!
+    <footer class="text-center">
+      <h3 class="text-dark">© 2022 by Vardis Sartzetakis</h3>
     </footer>
   </div>
   

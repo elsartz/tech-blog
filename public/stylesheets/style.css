@@ -80,7 +80,7 @@ p {
   display: inline-block;
   width: auto;
   margin-top: 20px;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -100,6 +100,10 @@ p {
 
 .hero p {
   max-width: 75%;
+}
+
+.hero a {
+  text-decoration: none;
 }
 
 .app-title {
@@ -182,6 +186,10 @@ p {
   font-size: 1.2rem;
   border: 2px solid var(--light-dark);
   border-radius: var(--border-radius);
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* HEIGHT / WIDTH UTILS */
