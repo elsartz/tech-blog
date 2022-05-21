@@ -7,38 +7,44 @@
     <input type="text" id="email-login" />
   </div> --}}
   <form id="user-form" class="card-body">
-    <div>
-          <label class="form-label" for="username">Username</label>
-          <input name="username" id="username" type="text" autofocus="true" class="form-input">
-          {{!-- <button type="submit" class="btn">Get User</button> --}}
-    </div>
-    <div>
-    <label class="form-label" for="password-login">Password:</label>
-    <input class="form-input" type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit" class="btn">login</button>
-  </div>
-        </form>
-  
-  
+      <div>
+            <label class="form-label" for="username">Username</label>
+            <input name="username" id="username" type="text" autofocus="true" class="form-input">
+            {{!-- <button type="submit" class="btn">Get User</button> --}}
+      </div>
+      <div>
+          <label class="form-label" for="password-login">Password:</label>
+          <input class="form-input" type="password" id="password-login" />
+      </div>
+      <div>
+        <button type="submit" class="btn">Login</button>
+      </div>
+  </form>  
 </form>
 
-<form class="signup-form">
+<form class="card">
   <div>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username-signup" />
+    <h3 class="card-header">Sign Up</h3>
   </div>
   <div>
-    <label for="email-signup">email:</label>
-    <input type="text" id="email-signup" />
+    <div>
+    <label for="username-signup">Username</label>
+    </div>
+    <div>
+    <input class="form-input" type="text" id="username-signup" />
+    </div>
+  </div>
+  
+  <div>
+    <div>
+    <label for="password-signup">Password</label>
+    </div>
+    <div>
+    <input class="form-input" type="password" id="password-signup" />
+    </div>
   </div>
   <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">signup</button>
+    <button class="btn" type="submit">Sign Up!</button>
   </div>
 </form>
 
