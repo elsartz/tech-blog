@@ -1,15 +1,27 @@
-<form class="login-form">
+<form class="card">
   <div>
+    <h3 class="card-header">Login</h3>
+  </div>
+  {{!-- <div>
     <label for="email-login">email:</label>
     <input type="text" id="email-login" />
+  </div> --}}
+  <form id="user-form" class="card-body">
+    <div>
+          <label class="form-label" for="username">Username</label>
+          <input name="username" id="username" type="text" autofocus="true" class="form-input">
+          {{!-- <button type="submit" class="btn">Get User</button> --}}
+    </div>
+    <div>
+    <label class="form-label" for="password-login">Password:</label>
+    <input class="form-input" type="password" id="password-login" />
   </div>
   <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" />
+    <button type="submit" class="btn">login</button>
   </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
+        </form>
+  
+  
 </form>
 
 <form class="signup-form">
