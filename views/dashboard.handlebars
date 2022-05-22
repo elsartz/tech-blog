@@ -1,3 +1,19 @@
+<header class="hero">
+      
+      <nav >
+        <button class="btn-back" href="/">Home</button>
+        <button class="btn-back" href="/dashboard">dashboard</button>
+        {{#if loggedIn}}        
+        <button id="logout" class="btn-back">logout</button>
+        {{else}}
+        <a class="btn-back" href="/login">login</a>
+        {{/if}}
+      </nav>
+      </br>
+      <h1 class="app-title">
+        <a href="/dashboard/">Your Dashboard</a>
+      </h1>
+    </header>
 <section>
   <h2>Create New Post</h2>
 
@@ -9,7 +25,7 @@
     <div>
       {{!-- <label for="post-content">Link</label> --}}
       <label for="post-content">Content</label>
-      <input id="post-content" name="post-content" />
+      <input id="post-content" name="post-content" type="textarea"/>
     </div>
     <button type="submit" class="btn">Create</button>
   </form>
@@ -17,15 +33,15 @@
 
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
-  <ol>
+  {{!-- <h2>Your Posts</h2> --}}
+  <ul>
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     </li>
     {{/each}}
-  </ol>
+  </ul>
 </section>
 {{/if}}
 

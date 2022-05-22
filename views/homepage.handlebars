@@ -1,7 +1,23 @@
-<ol class="post-list">
+ <header class="hero">
+      
+      <nav >
+        <button class="btn-back" href="/">Home</button>
+        <button class="btn-back" href="/dashboard">dashboard</button>
+        {{#if loggedIn}}        
+        <button id="logout" class="btn-back">logout</button>
+        {{else}}
+        <a class="btn-back" href="/login">login</a>
+        {{/if}}
+      </nav>
+      </br>
+      <h1 class="app-title">
+        <a href="/">The Tech Blog</a>
+      </h1>
+    </header>
+<ul class="post-list">
   {{#each posts as |post|}}
   <li>
     {{> post-info post }}
   </li>
   {{/each}}
-</ol>
+</ul>
