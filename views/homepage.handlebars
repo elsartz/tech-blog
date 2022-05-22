@@ -1,5 +1,4 @@
- <header class="hero">
-      
+ <header class="hero">      
       <nav >
         <button class="btn-back" href="/">Home</button>
         <a class="btn-back" href="/dashboard">dashboard</a>
@@ -14,9 +13,10 @@
         <a href="/">The Tech Blog</a>
       </h1>
     </header>
-<ul class="post-list">
+    
+<ul  class="post-list">
   {{#each posts as |post|}}
-  <li>
+  <li class="list-item">
     {{> post-info post }}
   </li>
   {{/each}}
