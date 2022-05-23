@@ -1,8 +1,7 @@
 <a href="/dashboard"> &larr; Back to dashboard</a>
 <article class="card" id="edit-post-form">  
-  <h2 class="card-header">
-    Edit Post
-  </h2>
+  <h2 class="card-header">Edit Post</h2>
+
   <form class="card-body" class="edit-post-form">
     <div>
       <label class="form-label" for="post-title">Title</label>
@@ -10,7 +9,7 @@
       </div>
       <div>
         <label class="form-label" for="post-content">Content</label>
-    <input name="post-content" class="form-input" id="post-content"  type="textarea" value="{{post.post_content}}"/>
+        <input class="form-input" id="post-content" name="post-content" type="textarea" value="{{post.post_content}}"/>
     </div>
    
     <button class="btn" type="submit">Update Post</button>
