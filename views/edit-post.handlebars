@@ -1,4 +1,4 @@
-<article>
+<article id="edit-post-form">
   <a href="/dashboard"> &larr; Back to dashboard</a>
   <h2>
     Edit Post
@@ -6,19 +6,15 @@
   <form class="edit-post-form">
     <div>
       <input name="post-title" type="text" value="{{post.title}}" />
-      {{!-- <span>({{format_url post.post_content}})</span> --}}
+    <input name="post-content" class="form-input" id="post-content"  type="textarea" value="{{post.post_content}}"/>
     </div>
-    <div>
-      {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
-      |
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
-    </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
+   
+    <button type="submit">Update Post</button>
+    <button type="button" class="delete-post-btn">Delete</button>
   </form>
 </article>
 
-<form class="comment-form">
+{{!-- <form class="comment-form">
   <div>
     <textarea name="comment-body"></textarea>
   </div>
@@ -28,8 +24,8 @@
   </div>
 </form>
 
-{{> comments post.comments}}
+{{> comments post.comments}} --}}
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
-<script src="/javascript/comment.js"></script>
+{{!-- <script src="/javascript/comment.js"></script> --}}
