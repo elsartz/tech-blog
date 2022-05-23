@@ -1,16 +1,20 @@
-<article id="edit-post-form">
-  <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
+<a href="/dashboard"> &larr; Back to dashboard</a>
+<article class="card" id="edit-post-form">  
+  <h2 class="card-header">
     Edit Post
   </h2>
-  <form class="edit-post-form">
+  <form class="card-body" class="edit-post-form">
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
+      <label class="form-label" for="post-title">Title</label>
+      <input class="form-input" name="post-title" type="text" value="{{post.title}}" />
+      </div>
+      <div>
+        <label class="form-label" for="post-content">Content</label>
     <input name="post-content" class="form-input" id="post-content"  type="textarea" value="{{post.post_content}}"/>
     </div>
    
-    <button type="submit">Update Post</button>
-    <button type="button" class="delete-post-btn">Delete</button>
+    <button class="btn" type="submit">Update Post</button>
+    <button type="button" class="delete-post-btn btn">Delete</button>
   </form>
 </article>
 

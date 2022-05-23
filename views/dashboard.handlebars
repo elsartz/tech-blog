@@ -18,9 +18,9 @@
 {{#if posts.length}}
 <section>
    
-    <ul class="post-list">
+    <ul >
         {{#each posts as |post|}}
-        <li>
+        <li class="list-item">
             {{> post-info post}}
             <a href="/dashboard/edit/{{post.id}}" class="edit-link">edit post</a>
         </li>
