@@ -1,15 +1,17 @@
 <article class="post">
-  <div class="justify-space-between">
+  <div class="card">
     {{!-- <a href="{{post_content}}" target="_blank">{{title}}</a> --}}
-    <div><a href="/post/{{id}}"> <h3 class="card-header">{{title}} </h3></a></div>
+    <div>
+      <a href="/post/{{id}}"> <h3 class="card-header">{{title}} </h3></a>
+    </div>
     <div><span>(Posted by {{user.username}} on {{format_date created_at}})</span></div>
-   
-   
-  </div>
+      
+ 
   <div class="card-body">
      <p>{{post_content}}</p>
     {{!-- {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}} --}}
     {{!-- |
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a> --}}
   </div>
+   </div>
 </article>
