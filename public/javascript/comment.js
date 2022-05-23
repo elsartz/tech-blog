@@ -19,7 +19,8 @@ async function commentFormHandler(event) {
     });
 
     if (response.ok) {
-      document.location.reload();
+      // document.location.reload();
+      document.location.replace('/dashboard');
     } else {
       alert(response.statusText);
     }
