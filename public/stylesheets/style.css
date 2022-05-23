@@ -102,7 +102,7 @@ p {
   max-width: 75%;
 }
 
-.hero a {
+a {
   text-decoration: none;
 }
 
@@ -220,6 +220,7 @@ p {
 }
 
 .justify-space-between {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -248,7 +249,9 @@ p {
 }
 
 .align-center {
+  display: flex;
   align-items: center;
+  
 }
 
 .col-auto {

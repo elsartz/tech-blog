@@ -1,6 +1,6 @@
 <a href="/dashboard"> &larr; Back to dashboard</a>
 {{> post-info post}}
-
+</br>
 {{#if loggedIn}}
 <form class="card" id="comment-form">
   <h2 class="card-header"></h2>
@@ -16,10 +16,11 @@
   </div>
   </div>
 </form>
+</br>
 {{/if}}
-
+<div class="card card-body">
 {{> comments post.comments}}
-
+</div>
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
 <script src="/javascript/upvote.js"></script>
