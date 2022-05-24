@@ -18,6 +18,9 @@
   {{#each posts as |post|}}
   <li class="list-item">
     {{> post-info post }}
+    <div class="card card-body">
+{{> comments post.comments}}
+</div>
   </li>
   {{/each}}
 </ul>
