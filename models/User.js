@@ -53,8 +53,8 @@ User.init(
       }
     },
     sequelize,
-    timestamps: false,
-    freezeTableName: true,
+    timestamps: false,      // for createdAt, updatedAt
+    freezeTableName: true,  // don't pluralize tables
     underscored: true,
     modelName: 'user'
   }

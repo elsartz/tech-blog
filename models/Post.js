@@ -16,7 +16,8 @@ class Post extends Model {
           'post_content',
           'title',
           'created_at',
-          [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+          // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+          [sequelize.literal('(SELECT COUNT(*) FROM post WHERE user.id = post.user_id)'), 'post_count']
         ],
         include: [
           {
