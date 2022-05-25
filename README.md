@@ -1,5 +1,5 @@
 ![badge](https://img.shields.io/badge/license-isc-green)
-  # Developer Blog
+  # Developer's Blog
   
   ## General purpose blog site 
   
@@ -14,7 +14,7 @@
   - [Questions](#questions)
 
   # Installation
-    A Javascript command-line application which make use several modules from the npm site.
+    A Javascript application which make use several modules from the npm site.
    Of course if you want to see the results you can follow this [link](https://infinite-cove-67044.herokuapp.com/) where is the live version of the app.
    In case you want to reproduce and make some changes, I recommend to use the Node.js with the below packages:
    - ```express``` to make a server
