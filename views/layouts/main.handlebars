@@ -1,42 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Tech Blog</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tech Blog</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
 
-<body>
-  {{!-- <div class="wrapper"> --}}
-    {{!-- <header class="hero">
-      
-      <nav >
-        <button class="btn-back" href="/">Home</button>
-        <button class="btn-back" href="/dashboard">dashboard</button>
-        {{#if loggedIn}}        
-        <button id="logout" class="btn-back">logout</button>
-        {{else}}
-        <a class="btn-back" href="/login">login</a>
-        {{/if}}
-      </nav>
-      </br>
-      <h1 class="app-title">
-        <a href="/">The Tech Blog</a>
-      </h1>
-    </header> --}}
-    <main>
-      {{{ body }}}
-    </main>
-    <footer class="text-center">
-      <h3 class="text-dark">© 2022 by Vardis Sartzetakis</h3>
-    </footer>
-  {{!-- </div> --}}
-  
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
-</body>
+  <body>
+    
+      <main>
+        {{{ body }}}
+      </main>
+      <footer class="text-center">
+        <h3 class="text-dark">© 2022 by Vardis Sartzetakis</h3>
+      </footer>
+    
+      {{#if loggedIn}}
+        <script src="/javascript/logout.js"></script>
+      {{/if}}
+  </body>
 
 </html>
