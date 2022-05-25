@@ -29,23 +29,23 @@ Post.belongsToMany(User, {
   onDelete: 'SET NULL'
 });
 
-Vote.belongsTo(User, {
-  foreignKey: 'user_id',
-  onDelete: 'SET NULL'
-});
+// Vote.belongsTo(User, {        // keep it for feature use
+//   foreignKey: 'user_id',
+//   onDelete: 'SET NULL'
+// });
 
-Vote.belongsTo(Post, {
-  foreignKey: 'post_id',
-  onDelete: 'SET NULL'
-});
+// Vote.belongsTo(Post, {
+//   foreignKey: 'post_id',
+//   onDelete: 'SET NULL'
+// });
 
-User.hasMany(Vote, {
-  foreignKey: 'user_id'
-});
+// User.hasMany(Vote, {
+//   foreignKey: 'user_id'
+// });
 
-Post.hasMany(Vote, {
-  foreignKey: 'post_id'
-});
+// Post.hasMany(Vote, {
+//   foreignKey: 'post_id'
+// });
 
 Comment.belongsTo(User, {
   foreignKey: 'user_id',

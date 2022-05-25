@@ -23,7 +23,7 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    // email: {
+    // email: {                         // keep it for feature use
     //   type: DataTypes.STRING,
     //   allowNull: false,
     //   unique: true,
