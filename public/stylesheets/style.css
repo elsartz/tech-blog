@@ -1,7 +1,7 @@
 /* from the project git-done */
 :root {
   --primary: #ccdad1;
-  --secondary: #9caea9;
+  --secondary: #bcf26b;
   --tertiary: #788585;
   --light-dark: #6f6866;
   --dark: #38302e;
@@ -42,6 +42,10 @@ main {
 p {
   font-size: 1.2rem;
   font-style: italic;
+}
+
+.meta {
+  color: var(--secondary);
 }
 
  .btn {
@@ -103,6 +107,8 @@ p {
 .hero p {
   max-width: 75%;
 }
+
+.hero a { color: var(--dark)}
 
 a {
   text-decoration: none;

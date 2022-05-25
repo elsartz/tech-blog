@@ -1,26 +1,16 @@
 <article class="post">
-  <div class="card">
-    {{!-- <a href="{{post_content}}" target="_blank">{{title}}</a> --}}
+  <div class="card">   
     <div class="flex-row justify-space-between">
-      <div class="col-8">
-        
+      <div class="col-8">        
         <a href="/post/{{id}}"><h3 class="card-header">{{title}}</h3></a>
-        </h3>
       </div>
       <div class="align-center justify-center">
         (Posted by {{user.username}} on {{format_date created_at}})
       </div>
     </div>
-  <div class="card-body">
-     <p>{{post_content}}</p>
-    {{!-- {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}} --}}
-    {{!-- |
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a> --}}
+    <div class="card-body">
+      <p>{{post_content}}</p>    
+    </div>
   </div>
-   </div>
-
-  {{!-- <div class="card card-body">
-{{> comments post.comments}}
-</div> --}}
 </article>
 

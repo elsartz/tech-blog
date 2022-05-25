@@ -14,10 +14,10 @@
         <a href="/dashboard/">Your Dashboard</a>
       </h1>
     </header>
+
 </br>
 {{#if posts.length}}
-<section>
-   
+<section>   
     <ul >
         {{#each posts as |post|}}
         <li class="list-item">
@@ -28,24 +28,21 @@
     </ul>
 </section>
 {{/if}}
+</br>
 
-    </br>
 <section class="card" id="new-post-form">
   <h2 class="card-header">Create New Post</h2>
-
   <form class="card-body" class="new-post-form">
     <div>
       <label class="form-label" for="post-title">Title</label>
       <input class="form-input" type="text" id="post-title" name="post-title" />
     </div>
     <div>
-      {{!-- <label for="post-content">Link</label> --}}
       <label class="form-label" for="post-content">Content</label>
       <input class="form-input" id="post-content" name="post-content" type="textarea"/>
     </div>
     <button type="submit" class="btn" >Create</button>
   </form>
 </section>
-
 
 <script src="/javascript/add-post.js"></script>
