@@ -15,6 +15,15 @@
 
   # Installation
     A Javascript command-line application which make use several modules from the npm site.
+   Of course if you want to see the results you can follow this [link](https://infinite-cove-67044.herokuapp.com/) where is the live version of the app.
+   In case you want to reproduce and make some changes, I recommend to use the Node.js with the below packages:
+   - ```express``` to make a server
+   - ```mysql2``` for the database
+   - ```sequelize``` for the queries 
+   - ```handlebars``` and ```express-handlebars``` to easy design and manipulate your HTML code
+   - ```connect-session-sequelize``` and ```express-session``` to control the session of the browser
+   - ```bcrypt``` to encrypt the passwords of the members
+   - ```dotenv``` to hide your credentials. 
 
   # Usage
     Another way to get into sosialize environment.
@@ -27,6 +36,8 @@
 
   # Tests
     Application screenshots:
+   ![Home page](https://github.com/elsartz/tech-blog/blob/main/img/home_screen.jpeg)
+   ![Dashboard](https://github.com/elsartz/tech-blog/blob/main/img/dashboard_screen.jpeg)
 
   # Questions
   If you have any questions, please contact me at [email](mailto:elsartz@gmail.com).
